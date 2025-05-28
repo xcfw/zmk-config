@@ -17,6 +17,20 @@
 };
 
 / {
+    behaviors {
+        encoder_ug_brightness: encoder_ug_brightness {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+        };
+        encoder_ug_hue: encoder_ug_hue {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
+        };
+        
+    };
+    
     keymap {
         compatible = "zmk,keymap";
 
@@ -64,14 +78,14 @@
 // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
-&trans    &trans &trans &trans  &trans  &trans                       &trans      &trans    &trans    &trans    &trans    &trans
-&kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4  &kp N5                       &kp N6      &kp N7    &kp HOME  &kp END   &kp N0    &trans
-&kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                       &kp LEFT    &kp DOWN  &kp UP    &kp RIGHT &trans    &trans
-&kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12   &trans   &trans    &kp KP_PLUS &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH
-                 &trans &trans  &trans  &trans    &trans   &trans    &trans      &trans    &trans    &trans
+&trans    &trans &trans &trans  &trans  &trans                                    &trans      &trans    &trans    &trans    &trans    &trans
+&kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4  &kp N5                                    &kp N6      &kp N7    &kp HOME  &kp END   &kp N0    &trans
+&kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                                    &kp LEFT    &kp DOWN  &kp UP    &kp RIGHT &trans    &trans
+&kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12   &rgb_ug RGB_TOG &rgb_ug RGB_EFF &kp KP_PLUS &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH
+                 &trans &trans  &trans  &trans    &trans          &trans          &trans      &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp RGB_UG_BRI_INC RGB_UG_BRI_DEC &inc_dec_kp RGB_UG_HUI_INC RGB_UG_HUE_DEC>;
+            sensor-bindings = <&encoder_ug_brightness &encoder_ug_hue>;
         };
     };
 };
