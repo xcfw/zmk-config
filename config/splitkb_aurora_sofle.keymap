@@ -28,7 +28,16 @@
             #sensor-binding-cells = <0>;
             bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
         };
-        
+        encoder_pk_brightness: encoder_pk_brightness { // For Per-Key LED Brightness
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_strip RGB_BRI>, <&rgb_strip RGB_BRD>;
+        };
+        encoder_pk_hue: encoder_pk_hue { // For Per-Key LED Hue
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_strip RGB_HUI>, <&rgb_strip RGB_HUD>;
+        };
     };
     
     keymap {
@@ -67,7 +76,7 @@
                             &trans            &trans            &trans       &trans    &trans   &trans    &trans    &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_rgb_code RGB_BRI RGB_BRD &inc_dec_rgb_code RGB_HUI RGB_HUD>;
+            sensor-bindings = <&encoder_pk_brightness &encoder_pk_hue>;
         };
 
         raise_layer {
