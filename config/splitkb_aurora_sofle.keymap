@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 &led_strip {
-    // chain-length = <12>; // Assuming 6 LEDs per side for underglow
+    // chain-length = <6>; // Assuming 6 LEDs per side for underglow
     chain-length = <35>; // Uncomment if using both per-key and underglow LEDs
     // chain-length = <29>; // Uncomment if using only per-key LEDs.
 };
@@ -31,12 +31,12 @@
         encoder_pk_brightness: encoder_pk_brightness { // For Per-Key LED Brightness
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&rgb_control RGB_BRI>, <&rgb_control RGB_BRD>;
+            bindings = <&kp RGB_BRI>, <&kp RGB_BRD>;
         };
         encoder_pk_hue: encoder_pk_hue { // For Per-Key LED Hue
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&rgb_control RGB_HUI>, <&rgb_control RGB_HUD>;
+            bindings = <&kp RGB_HUI>, <&kp RGB_HUD>;
         };
     };
     
