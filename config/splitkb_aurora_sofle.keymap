@@ -25,7 +25,7 @@
         };
         encoder_ug_hue: encoder_ug_hue {
             compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
+            #sensor-binding-cells = <2>;
             bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
         };
         encoder_pk_brightness: encoder_pk_brightness { // For Per-Key LED Brightness
@@ -35,7 +35,7 @@
         };
         encoder_pk_hue: encoder_pk_hue { // For Per-Key LED Hue
             compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
+            #sensor-binding-cells = <2>;
             bindings = <&rgb_strip RGB_HUI>, <&rgb_strip RGB_HUD>;
         };
     };
