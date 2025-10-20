@@ -45,7 +45,7 @@
 &kp TAB   &kp Q  &kp W     &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O    &kp P    &kp MINUS
 &kp LSHFT &kp A  &kp S     &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L    &kp SEMI &kp SQT
 &kp LCTRL &kp Z  &kp X     &kp C    &kp V    &kp B  &kp LBKT   &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-                 &kp LSHFT &kp LALT &kp LGUI &mo 1  &kp SPACE  &kp RET  &mo 2  &kp BSPC &kp RCTRL &kp RALT
+                 &kp LSHFT &kp LALT &kp LGUI &mo 1  &kp SPACE  &kp RET  &mo 2  &kp BSPC &kp LSHFT &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -77,11 +77,11 @@
 // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
-&kp LG(TAB) &kp LG(LS(TAB)) &kp N2 &kp N3     &kp N4     &kp N5                                       &trans      &trans     &trans    &trans    &kp LC(LS(TAB)) &kp LC(TAB)
-&kp TAB     &kp Q           &kp W  &kp KP_N7  &kp KP_N8  &kp KP_N9                                    &kp CARET   &kp DOLLAR &kp HOME  &kp END   &kp EQUAL       &trans
-&kp LSHFT   &kp A           &kp S  &kp KP_N4  &kp KP_N5  &kp KP_N6                                    &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT &kp LBKT        &kp LBRC
-&kp LSHFT   &kp Z           &kp X  &kp KP_N1  &kp KP_N2  &kp KP_N3    &rgb_ug RGB_TOG &rgb_ug RGB_EFF &kp KP_PLUS &kp MINUS  &kp EQUAL &kp LBKT  &kp RBKT        &kp F5
-                            &trans &trans     &trans     &trans       &trans          &trans          &trans      &trans     &trans    &trans
+&kp LG(TAB) &kp LG(LS(TAB)) &kp N2    &kp N3     &kp N4     &kp N5                                    &trans      &trans     &trans    &trans    &kp LC(LS(TAB)) &kp LC(TAB)
+&kp TAB     &kp Q           &kp W     &kp KP_N7  &kp KP_N8  &kp KP_N9                                 &kp CARET   &kp DOLLAR &kp HOME  &kp END   &kp EQUAL       &trans
+&kp LSHFT   &kp A           &kp S     &kp KP_N4  &kp KP_N5  &kp KP_N6                                 &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT &kp LBKT        &kp LBRC
+&kp LSHFT   &kp Z           &kp X     &kp KP_N1  &kp KP_N2  &kp KP_N3 &rgb_ug RGB_TOG &rgb_ug RGB_EFF &kp KP_PLUS &kp MINUS  &kp EQUAL &kp LBKT  &kp RBKT        &kp F5
+                            &kp LCTRL &trans     &trans     &trans    &trans          &trans          &trans      &trans     &trans    &trans
             >;
 
             sensor-bindings = <&encoder_ug_brightness &encoder_ug_hue>;
