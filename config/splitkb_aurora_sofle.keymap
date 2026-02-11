@@ -45,7 +45,7 @@
 &kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O    &kp P    &kp MINUS
 &kp LSHFT &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L    &kp SEMI &kp SQT
 &kp LCTRL &kp Z  &kp X  &kp C    &kp V    &kp B  &kp LBKT   &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-                 &kp F5 &kp LALT &kp LGUI &mo 2  &kp SPACE  &kp RET  &mo 1  &kp BSPC &kp LSHFT &kp RALT
+                 &kp RALT &kp LALT &kp LGUI &mo 2  &kp SPACE  &kp RET  &mo 1  &kp BSPC &kp LSHFT &kp F5 
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -82,7 +82,7 @@
 &bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                   &trans     &trans    &kp PIPE  &trans    &kp K_UNDO &kp K_REDO
 &kp LBKT   &kp RBKT         &kp EXCL          &kp AT            &kp HASH     &kp LG(LA(LC(LS(F6))))         &kp LBKT   &kp RBKT  &kp EXCL  &kp AT    &kp HASH   &trans
 &kp CARET  &kp BSLH         &kp STAR          &kp LPAR          &kp RPAR     &kp PRCNT                      &kp CARET  &kp BSLH  &kp STAR  &kp LPAR  &kp RPAR   &trans
-&kp LCTRL  &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans       &kp F23   &kp F24 &kp DOLLAR &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE  &kp LG(LA(LC(LS(NUBS))))
+&kp LCTRL  &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans       &kp F23   &kp F24 &kp DOLLAR &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE  &trans
                             &kp LSHFT         &kp LALT          &kp LGUI     &mo 1        &kp SPACE &kp RET &kp DELETE &kp BSPC  &kp DEL   &kp RALT
             >;
 
