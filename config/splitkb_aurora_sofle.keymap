@@ -63,7 +63,7 @@
 &kp LG(TAB) &kp LG(LS(TAB)) &kp N2    &kp N3     &kp N4     &kp N5                                    &trans      &trans     &trans    &trans    &kp RSHFT &kp LC(TAB)
 &kp TAB     &kp Q           &kp W     &kp KP_N7  &kp KP_N8  &kp KP_N9                                 &kp CARET   &kp DOLLAR &kp HOME  &kp END   &kp EQUAL &trans
 &kp LSHFT   &kp A           &kp S     &kp KP_N4  &kp KP_N5  &kp KP_N6                                 &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT &kp LBKT  &kp LBRC
-&kp LCTRL   &kp Z           &kp X     &kp KP_N1  &kp KP_N2  &kp KP_N3 &rgb_ug RGB_TOG &rgb_ug RGB_EFF &kp KP_PLUS &kp MINUS  &kp EQUAL &kp LBKT  &kp RBKT  &kp F5
+&kp LCTRL   &kp Z           &kp KP_N0 &kp KP_N1  &kp KP_N2  &kp KP_N3 &rgb_ug RGB_TOG &rgb_ug RGB_EFF &kp KP_PLUS &kp MINUS  &kp EQUAL &kp LBKT  &kp RBKT  &kp F5
                             &kp LCTRL &trans     &trans     &kp DEL   &trans          &trans          &trans      &trans     &trans    &trans
             >;
 
@@ -71,7 +71,7 @@
         };
 
         lower_layer {
-          // RIGHT SIDE
+          // LEFT SIDE
 // ------------------------------------------------------------------------------------------------------------
 // | BTCLR | BT1 | BT2  |  BT3 |  BT4 |  BT5 |                   |      |       |   |   |      |  UNDO | REDO  |
 // |   [   |  ]  |  !   |  @   |  #   |G+A+C+S+F6|               |  [   |   ]   |   !   |  @   |   #   |       |
@@ -80,9 +80,9 @@
 //               |SHIFT | ALT  | GUI |LOWER | SPACE  |  | ENTER | DEL  |  BSPC |  DEL  | RALT |
             bindings = <
 &bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                   &trans     &trans    &kp PIPE  &trans    &kp K_UNDO &kp K_REDO
-&kp LBKT   &kp RBKT         &kp EXCL          &kp AT            &kp HASH     &kp LG(LA(LC(LS(F6))))         &kp LBKT   &kp RBKT  &kp EXCL  &kp AT    &kp HASH   &trans
+&kp AT     &kp HASH         &kp EXCL          &kp LBRC          &kp RBRC     &kp LG(LA(LC(LS(F6))))         &kp LBKT   &kp RBKT  &kp EXCL  &kp AT    &kp HASH   &trans
 &kp CARET  &kp BSLH         &kp STAR          &kp LPAR          &kp RPAR     &kp PRCNT                      &kp CARET  &kp BSLH  &kp STAR  &kp LPAR  &kp RPAR   &trans
-&kp LCTRL  &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans       &kp F23   &kp F24 &kp DOLLAR &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE  &trans
+&kp LCTRL  &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans       &kp F23   &kp F24 &kp DOLLAR &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE  &kp LG(LA(LC(LS(NUBS))))
                             &kp LSHFT         &kp LALT          &kp LGUI     &mo 1        &kp SPACE &kp RET &kp DELETE &kp BSPC  &kp DEL   &kp RALT
             >;
 
