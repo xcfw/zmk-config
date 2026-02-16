@@ -79,14 +79,32 @@
 // | CTRL  |EP_ON|EP_OFF|EP_TOG|     |      |  F23   |  |  F24  |  $   |   {   |   }   |  |   |   ~   |G+A+C+S+NUBS|
 //               |SHIFT | ALT  | GUI |LOWER | SPACE  |  | ENTER | DEL  |  BSPC |  DEL  | RALT |
             bindings = <
-&bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                   &trans     &trans    &kp PIPE  &trans    &kp K_UNDO &kp K_REDO
-&kp AT     &kp HASH         &kp EXCL          &kp LBRC          &kp RBRC     &kp LG(LA(LC(LS(F6))))         &kp LBKT   &kp RBKT  &kp EXCL  &kp AT    &kp HASH   &trans
-&kp CARET  &kp BSLH         &kp STAR          &kp LPAR          &kp RPAR     &kp PRCNT                      &kp CARET  &kp BSLH  &kp STAR  &kp LPAR  &kp RPAR   &trans
-&kp LCTRL  &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans       &kp F23   &kp F24 &kp DOLLAR &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE  &kp LG(LA(LC(LS(NUBS))))
-                            &kp LSHFT         &kp LALT          &kp LGUI     &mo 1        &kp SPACE &kp RET &kp DELETE &kp BSPC  &kp DEL   &kp RALT
+&trans     &trans           &trans            &trans            &trans   &trans                       &trans     &trans    &kp PIPE  &trans    &kp K_UNDO &kp K_REDO
+&kp AT     &kp HASH         &kp EXCL          &kp DEL           &kp BSPC &kp LG(LA(LC(LS(F6))))       &kp LBKT   &kp RBKT  &kp EXCL  &kp AT    &kp HASH   &trans
+&kp CARET  &kp BSLH         &kp STAR          &kp RPAR          &kp LPAR &kp PRCNT                    &kp CARET  &kp BSLH  &kp STAR  &kp LPAR  &kp RPAR   &trans
+&kp LCTRL  &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans   &trans     &kp F23   &kp F24 &kp DOLLAR &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE  &kp LG(LA(LC(LS(NUBS))))
+                            &kp LSHFT         &kp LALT          &kp LGUI &mo 1      &kp SPACE &kp RET &kp DELETE &kp BSPC  &kp DEL   &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AC_ZOOM_OUT C_AC_ZOOM_IN>;
         };
+//         lower_layer {
+//           // LEFT SIDE
+// // ------------------------------------------------------------------------------------------------------------
+// // | BTCLR | BT1 | BT2  |  BT3 |  BT4 |  BT5 |                   |      |       |   |   |      |  UNDO | REDO  |
+// // |   [   |  ]  |  !   |  @   |  #   |G+A+C+S+F6|               |  [   |   ]   |   !   |  @   |   #   |       |
+// // |   ^   |  \  |  *   |  (   |  )   |  %   |                   |  ^   |   \   |   *   |  (   |   )   |       |
+// // | CTRL  |EP_ON|EP_OFF|EP_TOG|     |      |  F23   |  |  F24  |  $   |   {   |   }   |  |   |   ~   |G+A+C+S+NUBS|
+// //               |SHIFT | ALT  | GUI |LOWER | SPACE  |  | ENTER | DEL  |  BSPC |  DEL  | RALT |
+//             bindings = <
+// &bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                   &trans     &trans    &kp PIPE  &trans    &kp K_UNDO &kp K_REDO
+// &kp AT     &kp HASH         &kp EXCL          &kp LBRC          &kp RBRC     &kp LG(LA(LC(LS(F6))))         &kp LBKT   &kp RBKT  &kp EXCL  &kp AT    &kp HASH   &trans
+// &kp CARET  &kp BSLH         &kp STAR          &kp LPAR          &kp RPAR     &kp PRCNT                      &kp CARET  &kp BSLH  &kp STAR  &kp LPAR  &kp RPAR   &trans
+// &kp LCTRL  &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans       &kp F23   &kp F24 &kp DOLLAR &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE  &kp LG(LA(LC(LS(NUBS))))
+//                             &kp LSHFT         &kp LALT          &kp LGUI     &mo 1        &kp SPACE &kp RET &kp DELETE &kp BSPC  &kp DEL   &kp RALT
+//             >;
+//
+//             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AC_ZOOM_OUT C_AC_ZOOM_IN>;
+//         };
     };
 };
