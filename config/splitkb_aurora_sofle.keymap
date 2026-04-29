@@ -61,17 +61,17 @@
         raise_layer {
           // LEFT SIDE
 // ---------------------------------------------------------------------------------------------------------------------
-// | GUI+TAB|GUI+S+TAB|  2  |  3   |  4   |  5   |                   |      |       |       |      |CTRL+S+TAB|CTRL+TAB|
-// |  TAB   |  Q      |  W  | KP7  | KP8  | KP9  |                   |  ^   |   $   |  HOME |  END |   =      |       |
-// | SHIFT  |  A      |  S  | KP4  | KP5  | KP6  |                   |  <-  |   v   |  ^    |  ->  |   [      |   {   |
-// | SHIFT  |  Z      |  X  | KP1  | KP2  | KP3  |RGB_TOG |  |RGB_EFF|  +   |   -   |   =   |  [   |   ]      |  F5   |
-//                    |CTRL |      |      | DEL  |        |  |       |      |       |       |      |
+// | GUI+TAB|GUI+S+TAB|  2  |  3   |  4   |  5   |                   |      |       | CTRL-[ | CTRL-] | GUI+\ | F12 |
+// |  TAB   |  Q      |  W  | KP7  | KP8  | KP9  |                   |  ^   |   $   |  HOME  |  END |  #    |  \  |
+// | SHIFT  |  A      |  S  | KP4  | KP5  | KP6  |                   |  <-  |   v   |  ^     |  ->  |  (    |  )  |
+// | SHIFT  |  Z      |  X  | KP1  | KP2  | KP3  |RGB_TOG |  |RGB_EFF|  +   |   -   |   =    |  [   |  ]    | C-\ |
+//                    |CTRL |      |      | DEL  |        |  |       |      |       |        |      |
             bindings = <
 &kp LG(TAB) &kp LG(LS(TAB)) &kp N2    &kp N3     &kp N4     &kp N5                                    &trans      &trans     &kp LC(LBRC) &kp LC(RBRC) &kp LG(BSLH) &kp F12
 &kp TAB     &kp Q           &kp W     &kp KP_N7  &kp KP_N8  &kp KP_N9                                 &kp CARET   &kp DOLLAR &kp HOME     &kp END      &kp HASH     &kp BSLH
 &kp LSHFT   &kp A           &kp S     &kp KP_N4  &kp KP_N5  &kp KP_N6                                 &kp LEFT    &kp DOWN   &kp UP       &kp RIGHT    &kp LBRC     &kp RBRC
 &kp LCTRL   &kp Z           &kp KP_N0 &kp KP_N1  &kp KP_N2  &kp KP_N3 &rgb_ug RGB_TOG &rgb_ug RGB_EFF &kp KP_PLUS &kp MINUS  &kp EQUAL    &kp LBKT     &kp RBKT     &kp LC(BSLH)
-                            &kp LCTRL &trans     &kp BSPC   &kp DEL   &trans          &trans          &trans      &trans     &trans       &trans
+                            &kp LCTRL &trans     &kp LGUI   &kp DEL   &trans          &trans          &trans      &trans     &trans       &trans
             >;
 
             sensor-bindings = <&encoder_ug_brightness &encoder_ug_hue>;
@@ -81,16 +81,16 @@
           // LEFT SIDE
 // ------------------------------------------------------------------------------------------------------------------
 // | BTCLR | BT1  | BT2   |  BT3  |  BT4  |  BT5      |               |  6   |   7   |   8   |  9   |   0 |    `   |
-// |   [   |  ]   |  !    |  @    |  #    |G+A+C+S+F6 |               |  $   |   +   |   [   |  ]   |     |        |
+// |   [   |  ]   |  !    |  @    |  #    |G+A+C+S+F6 |               |  $   |   +   |   [   |  ]   |   * |        |
 // |   ^   |  \   |  *    |  (    |  )    |  %        |               |  ^   |   =   |   (   |  )   |   \ |        |
-// | CTRL  |EP_ON |EP_OFF |EP_TOG |       |           |  F23  |  F24  |  %   |   |   |   {   |  }   |     | C+BSLH |
+// | CTRL  |EP_ON |EP_OFF |EP_TOG |       |           |  F23  |  F24  |  %   |   |   |   {   |  }   |   # | C+BSLH |
 //                | SHIFT | ALT   | GUI   | LOWER     | SPACE | ENTER | DEL  |  BSPC |  DEL  | RALT |
             bindings = <
 &kp F12   &trans           &trans            &trans            &trans   &trans                       &trans     &trans    &trans    &trans    &trans     &trans
 &kp AT    &kp HASH         &kp EXCL          &kp DEL           &kp BSPC &kp LG(LA(LC(LS(F6))))       &kp DLLR   &kp PLUS  &kp LBKT  &kp RBKT  &kp STAR   &trans
 &kp CARET &kp BSLH         &kp STAR          &kp RPAR          &kp LPAR &kp PRCNT                    &kp CARET  &kp EQUAL &kp LPAR  &kp RPAR  &kp BSLH   &trans
 &kp LCTRL &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans   &trans   &kp F23     &kp F24 &kp PRCNT  &kp PIPE  &kp LBRC  &kp RBRC  &kp HASH   &kp LC(BSLH)
-                           &kp LSHFT         &kp LALT          &kp LGUI &mo 1    &kp SPACE   &kp RET &kp DELETE &kp BSPC  &kp DEL   &kp F12
+                           &kp LSHFT         &kp LALT          &kp BSPC &kp DEL  &kp SPACE   &kp RET &kp DELETE &kp BSPC  &kp DEL   &kp F12
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AC_ZOOM_OUT C_AC_ZOOM_IN>;
