@@ -67,10 +67,10 @@
 // | SHIFT  |  Z      |  X  | KP1  | KP2  | KP3  |RGB_TOG |  |RGB_EFF|  +   |   -   |   =    |  [   |  ]    | C-\ |
 //                    |CTRL |      |      | DEL  |        |  |       |      |       |        |      |
             bindings = <
-&kp LG(TAB) &kp LG(LS(TAB)) &kp N2    &kp N3     &kp N4     &kp N5                                    &trans      &trans     &kp LC(LBRC) &kp LC(RBRC)  &kp LG(BSLH) &kp F12
-&kp TAB     &kp Q           &kp W     &kp KP_N7  &kp KP_N8  &kp KP_N9                                 &kp CARET   &kp DOLLAR &kp LG(LEFT) &kp LG(RIGHT) &kp HASH     &kp BSLH
-&kp LSHFT   &kp A           &kp S     &kp KP_N4  &kp KP_N5  &kp KP_N6                                 &kp LEFT    &kp DOWN   &kp UP       &kp RIGHT     &kp LBRC     &kp RBRC
-&kp LCTRL   &kp Z           &kp KP_N0 &kp KP_N1  &kp KP_N2  &kp KP_N3 &rgb_ug RGB_TOG &rgb_ug RGB_EFF &kp KP_PLUS &kp MINUS  &kp EQUAL    &kp LBKT      &kp RBKT     &kp LC(BSLH)
+&kp LG(TAB) &kp LG(LS(TAB)) &kp N2    &kp N3     &kp N4     &kp N5                                    &trans      &trans     &kp LC(LBRC) &kp LC(RBRC) &kp LG(BSLH) &kp F12
+&kp TAB     &kp Q           &kp W     &kp KP_N7  &kp KP_N8  &kp KP_N9                                 &kp CARET   &kp DOLLAR &kp HOME     &kp END      &kp HASH     &kp BSLH
+&kp LSHFT   &kp A           &kp S     &kp KP_N4  &kp KP_N5  &kp KP_N6                                 &kp LEFT    &kp DOWN   &kp UP       &kp RIGHT    &kp LBRC     &kp RBRC
+&kp LCTRL   &kp Z           &kp KP_N0 &kp KP_N1  &kp KP_N2  &kp KP_N3 &rgb_ug RGB_TOG &rgb_ug RGB_EFF &kp KP_PLUS &kp MINUS  &kp EQUAL    &kp LBKT     &kp RBKT     &kp LC(BSLH)
                             &kp LCTRL &trans     &kp LGUI   &kp DEL   &trans          &trans          &trans      &trans     &trans       &trans
             >;
 
