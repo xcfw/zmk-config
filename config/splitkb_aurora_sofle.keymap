@@ -67,11 +67,11 @@
 // | SHIFT  |  Z      |  X  | KP1  | KP2  | KP3  |RGB_TOG |  |RGB_EFF|  +   |   -   |   =    |  [   |  ]    | C-\ |
 //                    |CTRL |      |      | DEL  |        |  |       |      |       |        |      |
             bindings = <
-&trans &trans       &trans       &trans       &trans       &trans                                  &trans      &trans     &kp LC(LBRC) &kp LC(RBRC) &kp LG(BSLH) &kp F12
-&trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &kp F8                                  &kp CARET   &kp DOLLAR &kp HOME     &kp END      &kp HASH     &kp BSLH
-&trans &kp F1       &kp F5       &kp F9       &kp F10      &kp F12                                 &kp LEFT    &kp DOWN   &kp UP       &kp RIGHT    &kp LBRC     &kp RBRC
-&trans &trans       &trans       &trans       &trans       &trans  &rgb_ug RGB_TOG &rgb_ug RGB_EFF &kp KP_PLUS &kp MINUS  &kp EQUAL    &kp LBKT     &kp RBKT     &kp PIPE
-                    &trans       &trans       &trans       &kp DEL &trans          &trans          &trans      &trans     &trans       &trans
+&trans &bt BT_CLR_ALL &trans       &trans       &trans       &trans                                  &trans      &trans     &kp LC(LBRC) &kp LC(RBRC) &kp LG(BSLH) &kp F12
+&trans &bt BT_CLR     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &kp F8                                  &kp CARET   &kp DOLLAR &kp HOME     &kp END      &kp HASH     &kp BSLH
+&trans &kp F1         &kp F5       &kp F9       &kp F10      &kp F12                                 &kp LEFT    &kp DOWN   &kp UP       &kp RIGHT    &kp LBRC     &kp RBRC
+&trans &trans         &trans       &trans       &trans       &trans  &rgb_ug RGB_TOG &rgb_ug RGB_EFF &kp KP_PLUS &kp MINUS  &kp EQUAL    &kp LBKT     &kp RBKT     &kp PIPE
+                      &trans       &trans       &trans       &kp DEL &trans          &trans          &trans      &trans     &trans       &trans
             >;
 
             sensor-bindings = <&encoder_ug_brightness &encoder_ug_hue>;
